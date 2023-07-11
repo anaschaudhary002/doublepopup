@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .dot-svg {
+            margin-top: 0 !important;
+
+        }
+
+        .main {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            
+        }
+
+        .main-btn1 {
+            padding: 5px 45px;
+            border-radius: 4px;
+            background-color: rgba(0, 153, 255, 0.788);
+            color: white;
+            border: none;
+            border: 2px solid white;
+        }
+
+        .main-btn2 {
+            padding: 5px 40px;
+            border-radius: 4px;
+            background-color: red;
+            color: white;
+            border-color: red;
+        }
+
+        .popup-btn1 {
+            margin:15px ;
+            background-color: yellow;
+            border-radius: 20px;
+            padding: 5px 40px;
+        }
+        .popup-btn2 {
+            margin:15px ;
+            background-color: yellow;
+            border-radius: 20px;
+            padding: 5px 40px;
+        }
+
+        .firstpopup {
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            border-radius: 10px;
+        }
+
+        .secondpopup {
+            position: absolute;
+            top: 2%;
+            left: 50%;
+            transform: translate(-50%, 2% );
+            display: none;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container main" style=" ">
+        <div class="row firstpopup"
+            style="background-color: rgba(0, 153, 255, 0.788); height: 400px;width: 500px; margin: auto;">
+            <div class="col-12 d-flex justify-content-center" style="align-items: center;margin-top: 30px;">
+                <img src="https://img.freepik.com/free-icon/portrait_318-895288.jpg" height="150px" width="150px">
+            </div>
+            <div class="col-12" style="text-align:center;font-size:23px;font-weight: 600;height: 50px;margin-top: 15px;">CONFIRM YOUR
+                INVITER</div>
+            <div class="col-12 dot-svg" style="text-align:center;">
+                <svg style="margin-bottom:15px ;" xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="white" class="bi bi-three-dots"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                </svg>
+                <div >
+                    <input type="checkbox" id="chkbox">
+                    <label for="chkbox" style="color:white;">Agree to the <span
+                            style="color: gold;font-weight: 700;">Terms & Condition</span></label>
+                </div>
+            </div>
+            <div class="col-12 btn-div">
+                <div style="display:flex; justify-content: space-between;;margin-top: 10px;">
+                    <button type="submit" class="main-btn1">Cancel</button>
+                    <button type="submit" class="main-btn2">Confirm</button>
+                </div>
+            </div>
+        </div>
+        <div class="row secondpopup" style="width: 900px;height: 600px; background-color: black;border-radius:20px;">
+            <div class="col-12">
+                <div style="position: relative;margin-bottom: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="BLUE" class="bi bi-dot"
+                        viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                    </svg>
+                    <span
+                        style="color:white;font-size: 15px;font-weight: 600;position: absolute;top:22px;left:45px;">NOT
+                        FINANCIAL ADVICE</span>
+                    <p style="color:white;font-size: 12px;position:absolute;top:43px;left:28px;">Lorem ipsum dolor sit,
+                        amet consectetur adipisicing elit. Harum nemo beatae dolore, fugiat modi soluta pariatur iste
+                        architecto ipsam enim officiis quibusdam doloremque vel porro eaque deleniti accusantium quae
+                        consequuntur illum nesciunt, exercitationem debitis repellat magnam. Doloremque aliquam placeat
+                        culpa quo aspernatur ducimus, magnam mollitia autem error sequi nulla officiis!</p>
+                </div>
+                <div style="position: relative;margin-bottom: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="BLUE" class="bi bi-dot"
+                        viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                    </svg>
+                    <span
+                        style="color:white;font-size: 15px;font-weight: 600;position: absolute;top:22px;left:45px;">PLEASE
+                        BE INSURE THAT</span>
+                    <p style="color:white;font-size: 12px;position:absolute;top:43px;left:28px;">Lorem ipsum dolor sit,
+                        amet consectetur adipisicing elit. Harum nemo beatae dolore, fugiat modi soluta pariatur iste
+                        architecto ipsam enim officiis quibusdam doloremque vel porro eaque deleniti accusantium quae
+                        consequuntur illum nesciunt, exercitationem debitis repellat magnam. Doloremque aliquam placeat
+                        culpa quo aspernatur ducimus, magnam mollitia autem error sequi nulla officiis!</p>
+                </div>
+                <div style="position: relative;margin-bottom: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="BLUE" class="bi bi-dot"
+                        viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                    </svg>
+                    <span
+                        style="color:white;font-size: 15px;font-weight: 600;position: absolute;top:22px;left:45px;">THESE
+                        TERMS OF USE ARE APPLICABLE</span>
+                    <p style="color:white;font-size: 12px;position:absolute;top:43px;left:28px;">Lorem ipsum dolor sit
+                        amet consectetur, adipisicing elit. Illum laboriosam tempore fugiat veritatis commodi in enim
+                        delectus modi ut, harum obcaecati vitae provident accusantium aspernatur, debitis aut dolores
+                        cupiditate dicta! Minus placeat asperiores voluptates quia quas tempora alias illum cum ad
+                        consequatur, eum nam nostrum obcaecati qui! Pariatur, odio ullam?</p>
+                </div>
+                <div style="position: relative;margin-bottom: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="BLUE" class="bi bi-dot"
+                        viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                    </svg>
+                    <span
+                        style="color:white;font-size: 15px;font-weight: 600;position: absolute;top:22px;left:45px;">ALL
+                        CONTENT THAT IS POSTED</span>
+                    <p style="color:white;font-size: 12px;position:absolute;top:43px;left:28px;">Lorem ipsum dolor sit,
+                        amet consectetur adipisicing elit. Harum nemo beatae dolore, fugiat modi soluta pariatur iste
+                        architecto ipsam enim officiis quibusdam doloremque vel porro eaque deleniti accusantium quae
+                        consequuntur illum nesciunt, exercitationem debitis repellat magnam. Doloremque aliquam placeat
+                        culpa quo aspernatur ducimus, magnam mollitia autem error sequi nulla officiis!</p>
+                </div>
+                <div style="position: relative;margin-bottom: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="BLUE" class="bi bi-dot"
+                        viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                    </svg>
+                    <span
+                        style="color:white;font-size: 15px;font-weight: 600;position: absolute;top:22px;left:45px;">NOTHING
+                        IN THIS ARTICLE SHOULD BE</span>
+                    <p style="color:white;font-size: 12px;position:absolute;top:43px;left:28px;">Lorem ipsum dolor sit,
+                        amet consectetur adipisicing elit. Harum nemo beatae dolore, fugiat modi soluta pariatur iste
+                        architecto ipsam enim officiis quibusdam doloremque vel porro eaque deleniti accusantium quae
+                        consequuntur illum nesciunt, exercitationem debitis repellat magnam. Doloremque aliquam placeat
+                        culpa quo aspernatur ducimus, magnam mollitia autem error sequi nulla officiis!</p>
+                </div>
+                <div style="position: relative;margin-bottom: 15px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="BLUE" class="bi bi-dot"
+                        viewBox="0 0 16 16">
+                        <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                    </svg>
+                    <span
+                        style="color:white;font-size: 15px;font-weight: 600;position: absolute;top:22px;left:45px;">THE
+                        WEBSITE IS TO BE USED AT</span>
+                    <p style="color:white;font-size: 12px;position:absolute;top:43px;left:28px;">Lorem ipsum dolor sit,
+                        amet consectetur adipisicing elit. Harum nemo beatae dolore, fugiat modi soluta pariatur iste
+                        architecto ipsam enim officiis quibusdam doloremque vel porro eaque deleniti accusantium quae
+                        consequuntur illum nesciunt, exercitationem debitis repellat magnam. Doloremque aliquam placeat
+                        culpa quo aspernatur ducimus, magnam mollitia autem error sequi nulla officiis!</p>
+                </div>
+                <div style="display:flex;justify-content: space-between;">
+                    <button class="popup-btn1" type="submit">Confirm</button>
+                    <button class="popup-btn2" type="submit">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let input = document.querySelector("input");
+        let secondpopup = document.querySelector(".secondpopup");
+        let popupbtn1 = document.querySelector(".popup-btn1");
+        let popupbtn2 = document.querySelector(".popup-btn2");
+        let mainbtn2 = document.querySelector(".main-btn2");
+        
+
+        input.addEventListener("click", () => {
+            if(input.checked){
+                secondpopup.style.display="block";
+            }else{
+                secondpopup.style.display="none";
+            }
+        })
+        popupbtn1.addEventListener("click", () => {
+            secondpopup.style.display="none";
+            mainbtn2.style.background="green";
+            mainbtn2.style.border="2px solid green";
+        })
+        popupbtn2.addEventListener("click", () => {
+            secondpopup.style.display="none";
+            mainbtn2.style.background="red";
+            mainbtn2.style.border="2px solid red";
+            input.checked=false;
+        })
+    </script>
+</body>
+
+</html>
